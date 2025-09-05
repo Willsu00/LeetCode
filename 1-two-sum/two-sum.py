@@ -5,13 +5,21 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        map = {}
+        # O(n) Solution
 
-        for i, n in enumerate(nums):
-            d = target - n
-            if d in map:
-                return [map[d], i]
-            map[n] = i
+        # map = {}
+
+        # for i, n in enumerate(nums):
+        #     d = target - n
+        #     if d in map:
+        #         return [map[d], i]
+        #     map[n] = i
+
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                x = nums[i] + nums[j]
+                if x == target:
+                    return i, j
 
 
         
