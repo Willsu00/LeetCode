@@ -6,9 +6,11 @@ class Solution(object):
         :rtype: bool
         """
 
-        if len(t) != len(s):
-            return False
+        # if len(t) != len(s):
+        #     return False
         
 
-        return sorted(t) == sorted(s)
+        # return sorted(t) == sorted(s)
+
+        return Counter(s) == Counter(t)
         
