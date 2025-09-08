@@ -9,6 +9,6 @@ class Solution(object):
         if len(t) != len(s):
             return False
         
-        x = (sorted(t) == sorted(s))
-        return x
+
+        return sorted(t) == sorted(s)
         
