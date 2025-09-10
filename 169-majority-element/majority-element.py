@@ -5,4 +5,6 @@ class Solution(object):
         :rtype: int
         """
 
-        return Counter(nums).most_common()[0][0]
+        count = Counter(nums)
+
+        return count.most_common()[0][0]
