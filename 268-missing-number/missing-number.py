@@ -5,7 +5,5 @@ class Solution(object):
         :rtype: int
         """
         n = len(nums)
-        Tsum = (n * (n + 1)) // 2
-        actual_sum = sum(nums)
-        return Tsum - actual_sum
+        return n * (n + 1) // 2 - sum(nums)
             
