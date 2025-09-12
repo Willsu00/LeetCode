@@ -4,9 +4,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        ns = set(nums)
-
-        for i in range(len(nums)+1):
-            if i not in ns:
-                return i
+        n = len(nums)
+        Tsum = (n * (n + 1)) // 2
+        actual_sum = sum(nums)
+        return Tsum - actual_sum
             
