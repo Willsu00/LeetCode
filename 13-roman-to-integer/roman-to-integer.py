@@ -9,7 +9,10 @@ class Solution(object):
         n = 0
 
         for i in range(len(s)):
+            # check to make sure it isn't going out of bounds and compare i to i+1 in string s
+            # values should go from largest to smallest so M -> D -> C -> ... -> I
             if i+1 < len(s) and r_num[s[i]] < r_num[s[i+1]]:
+                # if value i is less than i+1, subtract i from n
                 n -= r_num[s[i]]
             else:
                 n += r_num[s[i]]
