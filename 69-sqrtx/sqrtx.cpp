@@ -6,10 +6,6 @@ public:
         int right = x;
         int n = 0;
 
-        if (x==0 || x==1) {
-            return x;
-        }
-
         while (left <= right) {
             long long mid = left + (right - left) / 2;
 
